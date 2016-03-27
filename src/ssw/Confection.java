@@ -7,35 +7,35 @@ class Confection {
 
     private int id;
 
-    public int getWeight() {
+    int getWeight() {
         return weight;
     }
 
-    public void setWeight(int weight) {
+    void setWeight(int weight) {
         this.weight = weight;
     }
 
-    public int getSugar() {
+    int getSugar() {
         return sugar;
     }
 
-    public void setSugar(int sugar) {
+    void setSugar(int sugar) {
         this.sugar = sugar;
     }
 
-    public String getManufacturer() {
+    String getManufacturer() {
         return manufacturer;
     }
 
-    public void setManufacturer(String manufacturer) {
+    void setManufacturer(String manufacturer) {
         this.manufacturer = manufacturer;
     }
 
-    public int getId() {
+    int getId() {
         return id;
     }
 
-    public void setId(int id) {
+    void setId(int id) {
         this.id = id;
     }
 }

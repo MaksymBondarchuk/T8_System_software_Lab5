@@ -3,7 +3,7 @@ package ssw;
 class Cookie extends Confection {
     private int flourAmount;
 
-    public Cookie(int weight, int sugar, String manufacturer, int id, int flourAmount) {
+    Cookie(int weight, int sugar, String manufacturer, int id, int flourAmount) {
         setWeight(weight);
         setSugar(sugar);
         setManufacturer(manufacturer);
@@ -12,7 +12,7 @@ class Cookie extends Confection {
         this.flourAmount = flourAmount;
     }
 
-    public int getFlourAmount() {
+    int getFlourAmount() {
         return flourAmount;
     }
 

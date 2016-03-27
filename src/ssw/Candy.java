@@ -3,7 +3,7 @@ package ssw;
 class Candy extends Confection {
     private String color;
 
-    public Candy(int weight, int sugar, String manufacturer, int id, String color) {
+    Candy(int weight, int sugar, String manufacturer, int id, String color) {
         setWeight(weight);
         setSugar(sugar);
         setManufacturer(manufacturer);
@@ -12,7 +12,7 @@ class Candy extends Confection {
         this.color = color;
     }
 
-    public String getColor() {
+    String getColor() {
         return color;
     }
 
