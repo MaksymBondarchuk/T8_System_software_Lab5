@@ -19,6 +19,9 @@ class NewYearGift {
     NewYearGift() {
     }
 
+    /**
+     * Reads tables from database
+     */
     void init() {
         try {
             conn = getConnection("jdbc:mysql://localhost:3306/ssw_lab5", "root", "5131");
@@ -55,6 +58,9 @@ class NewYearGift {
         }
     }
 
+    /**
+     * Commits tables to database (deletes all from tables and inserts new rows)
+     */
     void commit() {
         try {
             conn = getConnection("jdbc:mysql://localhost:3306/ssw_lab5", "root", "5131");
