@@ -47,14 +47,6 @@ class NewYearGift {
             st.close();
         } catch (SQLException ex) {
             System.out.println(ex.toString());
-        } finally {
-            try {
-                if (conn != null) {
-                    conn.close();
-                }
-            } catch (SQLException ex) {
-                System.out.println(ex.toString());
-            }
         }
     }
 
@@ -63,7 +55,6 @@ class NewYearGift {
      */
     void commit() {
         try {
-            conn = getConnection("jdbc:mysql://localhost:3306/ssw_lab5", "root", "5131");
             Statement st = conn.createStatement();
             st.executeUpdate("DELETE FROM candy;");
             for (Candy candy : candies)
